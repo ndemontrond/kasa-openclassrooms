@@ -1,6 +1,6 @@
 // src/components/About.tsx
 //import React from 'react';
-import kasaLogo from '/LOGO.svg';
+import kasaLogo from '../assets/LOGO.svg';
 
 
 const About = () => {

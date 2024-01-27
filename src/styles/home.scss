@@ -1,0 +1,44 @@
+
+    /* Styles specific to the home route */
+    // color: black;
+main {
+    width: 54px;
+}
+    .background {
+      height: 223px;
+      flex-shrink: 0;
+      border-radius: 25px;
+  
+      background: #F6F6F6 url('../assets/background.png') no-repeat center center;
+      background-size: cover;
+    }
+
+    .page-title {
+      text-align: center;
+      size: 32px; //à modifier
+      color: white;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 2em;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+
+
+.red-square {
+    width: 340px;
+    height: 340px;
+    color: #FF6060;
+}
+
+.card {
+    // width: 340px;
+    // height: 340px;
+    background-color: #FF6060;
+    flex-shrink: 0;
+    flex: 0 0 calc(33.333333% - 4em);
+    aspect-ratio: 1 / 1;
+}

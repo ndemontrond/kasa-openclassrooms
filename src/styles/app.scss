@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +65,45 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+} */
+
+:root {
+    --bg: #FF6060;
+    --bg-text-color: black;
+    --bg-accent: #F6F6F6;
+    --text-color: #FF6060;
+    --nav-size: 60px;
+    --border: 1px solid red;
+    --border-radius: 8px;
+    --speed: 500ms;
+    list-style-type: none;
+    /* background-color: #242424; */
+  
+  }
+  
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+  
+  // a {
+  //   color: var(--text-color);
+  //   text-decoration: none;
+  // }
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 1240px;
+
+}
+
+
+

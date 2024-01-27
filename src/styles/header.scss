@@ -1,0 +1,25 @@
+.header-container {
+    display: flex;
+    gap: 50px;
+}
+
+.logo {
+    height: 68px;
+}
+
+.navigation-container {
+    display: flex;
+    gap: 57px;
+}
+
+.navigation-link {
+    text-decoration: none;
+
+    color: #FF6060;
+
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    // text-decoration-line: underline;
+}

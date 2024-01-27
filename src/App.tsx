@@ -1,38 +1,41 @@
-//import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-//import AppRouter from './Router';
+import { useState, useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import './styles/app.scss'; // Import your global SCSS file
 import Home from './pages/Home'; // Import your Home component
 import About from './pages/About'; // Import your About component
+import Header from './components/header';
 
-//import reactLogo from './assets/react.svg';
-//import viteLogo from './assets/vite.svg';
+import logementlist from './components/logementlist';
+import logementdetail from './components/logementdetail'; 
 
-import './App.css';
-import './styles.scss';
+
+const logementData = [
+  { id: 1, name: 'Appartement A' },
+  { id: 2, name: 'Maison B' },
+];
+
 
 function App() {
-  return (
-    <Router>
-      {/**<div>
-        <Link to="/">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </Link>
-        <Link to="/">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </Link>
-      </div>
-      <h1>Vite + React</h1>
-      <Route path="/user/:id" element={<User />} />
-      <div className="card">
-        <AppRouter />
-      </div>*/}
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-      
 
-      </Routes>
-    </Router>
+  return (
+
+      <div className='app-container'>
+        <Header />
+
+
+
+
+      
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+
+          <Route path="/logement" element={<logementlist logementData={logementData} />} />
+          <Route path="/logement/:id" element={<logementdetail />} />
+        </Routes>
+        </div>
+
+      
   );
 }
 

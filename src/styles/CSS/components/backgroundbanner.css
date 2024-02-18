@@ -1,0 +1,41 @@
+/* MyComponent.css */
+.background-banner {
+  width: 100%;
+  height: 223px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-banner.about {
+  background-image: url("../../../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png");
+}
+.background-banner.default {
+  background-image: url("../../../assets/background.png");
+}
+
+.background-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 25px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 32px;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=backgroundbanner.css.map */

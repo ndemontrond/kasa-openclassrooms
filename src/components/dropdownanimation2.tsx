@@ -1,11 +1,6 @@
 import { JSXElementConstructor, ReactElement, ReactNode, ReactPortal, useState } from 'react';
-import '../styles/DropDownAnimation.scss'; // Import your CSS file
+import '../styles/CSS/components/dropdownanimation.css'; // Import your CSS file
 import ArrowLogo from '../assets/arrow.svg'; 
-
-// const categoryTranslations = {
-//     equipment: 'Équipement', // Add more translations as needed
-//     description: 'Description',
-//   };
 
 const DropDownAnimation = ( props:{children: string | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal; }) => {
   const [open, setOpen] = useState(false);

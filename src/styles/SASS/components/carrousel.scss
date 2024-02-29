@@ -3,4 +3,13 @@
     min-width: 100%;
     object-fit: cover;
     object-position: center;
+    position: absolute;
+    // margin: 0 auto; /* Center horizontally */
+}
+
+#carrousel {
+    position: relative;
+    height: 415px;
+    //min-width: 100%;
+    min-width: 100%;
 }

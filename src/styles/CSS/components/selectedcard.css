@@ -2,4 +2,41 @@
   width: 1240px;
 }
 
+#cardTitle {
+  color: #ff6060;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.6%; /* 51.336px */
+}
+
+#cardLocation {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#cardTagsContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.cardTags {
+  border-radius: 10px;
+  background: #ff6060;
+  width: 115px;
+  height: 25px;
+  flex-shrink: 0;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: center;
+}
+
 /*# sourceMappingURL=selectedcard.css.map */

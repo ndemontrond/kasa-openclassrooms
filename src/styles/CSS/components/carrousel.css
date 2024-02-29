@@ -3,6 +3,13 @@
   min-width: 100%;
   object-fit: cover;
   object-position: center;
+  position: absolute;
+}
+
+#carrousel {
+  position: relative;
+  height: 415px;
+  min-width: 100%;
 }
 
 /*# sourceMappingURL=carrousel.css.map */

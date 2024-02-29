@@ -15,7 +15,7 @@ const Carousel = ({ selectedCard }) => {
     ];
 
     return (
-        <div className="carousel">
+        <div id="carrousel">
             <PrevImageButton
                 setCurrentImageIndex={setCurrentImageIndex}
                 images={images}

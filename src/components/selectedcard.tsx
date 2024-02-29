@@ -34,10 +34,13 @@ const SelectedCard = () => {
     return (
         <div className="selected-card">
             <Carrousel selectedCard={selectedCard} />
-            <h2>{selectedCard.title}</h2>
-            <p>{selectedCard.location}</p>
-            <p>{selectedCard.tags[0]}</p>
-            <p>{selectedCard.tags[1]}</p>
+            <h2 id="cardTitle">{selectedCard.title}</h2>
+            <p id="cardLocation">{selectedCard.location}</p>
+            <div id="cardTagsContainer">
+                <p className="cardTags">{selectedCard.tags[0]}</p>
+                <p className="cardTags">{selectedCard.tags[1]}</p>
+                <p className="cardTags">{selectedCard.tags[2]}</p>
+            </div>
             <p>{selectedCard.host.name}</p>
             <img src={selectedCard.host.picture} alt={selectedCard.host.name} />
 

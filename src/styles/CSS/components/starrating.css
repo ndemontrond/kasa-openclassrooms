@@ -1,0 +1,15 @@
+#starsContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+#starsContainer svg {
+  max-width: fit-content;
+}
+
+.starsStyling {
+  font-size: 32px;
+}
+
+/*# sourceMappingURL=starrating.css.map */

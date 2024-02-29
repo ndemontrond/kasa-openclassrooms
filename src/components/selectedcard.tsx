@@ -4,22 +4,7 @@ import { useParams } from "react-router-dom";
 import logementsData from "../data/logements.json";
 import "../styles/CSS/components/selectedcard.css";
 import Carrousel from "./carrousel";
-
-// interface Logement {
-//   id: string;
-//   title: string;
-//   cover: string;
-//   pictures: string[];
-//   description: string;
-//   host: {
-//     name: string;
-//     picture: string;
-//   };
-//   rating: string;
-//   location: string;
-//   equipments: string[];
-//   tags: string[];
-// }
+import StarRating from "./starRating";
 
 const SelectedCard = () => {
     const { cardId } = useParams<{ cardId: string }>();
@@ -34,27 +19,40 @@ const SelectedCard = () => {
     return (
         <div className="selected-card">
             <Carrousel selectedCard={selectedCard} />
-            <h2 id="cardTitle">{selectedCard.title}</h2>
-            <p id="cardLocation">{selectedCard.location}</p>
-            <div id="cardTagsContainer">
-                <p className="cardTags">{selectedCard.tags[0]}</p>
-                <p className="cardTags">{selectedCard.tags[1]}</p>
-                <p className="cardTags">{selectedCard.tags[2]}</p>
+            <div id="textContainer">
+                <div id="leftSideContainer">
+                    <h2 id="cardTitle">{selectedCard.title}</h2>
+                    <p id="cardLocation">{selectedCard.location}</p>
+                    <div id="cardTagsContainer">
+                        {selectedCard.tags.map((tag, index) => (
+                            <p key={index} className="cardTags">
+                                {tag}
+                            </p>
+                        ))}
+                    </div>
+                    <DropDownAnimation>
+                        <p>{selectedCard.description}</p>
+                    </DropDownAnimation>
+                </div>
+                <div id="rightSideContainer">
+                    <div id="hostContainer">
+                        <p id="hostName">{selectedCard.host.name}</p>
+                        <img
+                            src={selectedCard.host.picture}
+                            alt={selectedCard.host.name}
+                            id="hostPicture"
+                        />
+                    </div>
+                    <StarRating rating={selectedCard.rating}/>
+                    <DropDownAnimation>
+                        <ul>
+                            {selectedCard.equipments.map((equipment, index) => (
+                                <li key={index}>{equipment}</li>
+                            ))}
+                        </ul>
+                    </DropDownAnimation>
+                </div>
             </div>
-            <p>{selectedCard.host.name}</p>
-            <img src={selectedCard.host.picture} alt={selectedCard.host.name} />
-
-            <p>{selectedCard.description}</p>
-            <DropDownAnimation>
-                <p>{selectedCard.description}</p>
-            </DropDownAnimation>
-            <DropDownAnimation>
-                <ul>
-                    {selectedCard.equipments.map((equipment, index) => (
-                        <li key={index}>{equipment}</li>
-                    ))}
-                </ul>
-            </DropDownAnimation>
         </div>
     );
 };

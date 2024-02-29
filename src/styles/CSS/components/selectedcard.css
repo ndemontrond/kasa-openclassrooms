@@ -1,5 +1,7 @@
 .selected-card {
   width: 1240px;
+  display: flex;
+  flex-direction: column;
 }
 
 #cardTitle {
@@ -26,7 +28,8 @@
 .cardTags {
   border-radius: 10px;
   background: #ff6060;
-  width: 115px;
+  min-width: 115px;
+  padding: 0 10px;
   height: 25px;
   flex-shrink: 0;
   color: #fff;
@@ -37,6 +40,47 @@
   display: flex;
   align-items: center; /* Vertically center */
   justify-content: center;
+}
+
+#dropDownAnimationContainer {
+  display: flex;
+  gap: 50px;
+}
+
+#textContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* This ensures equal height */
+}
+
+#leftSideContainer,
+#rightSideContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 50%;
+}
+
+#hostContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: end;
+}
+
+#hostName {
+  color: #ff6060;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#hostPicture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=selectedcard.css.map */

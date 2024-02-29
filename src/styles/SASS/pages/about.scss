@@ -1,61 +1,27 @@
-// .header-container {
-//     display: flex;
-//     justify-content: space-between; /* Align items horizontally */
-//     align-items: center; /* Align items vertically */
-// }
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-// .button-container {
+main {
+    display: flex;
+    flex-direction: column;
 
-// }
+    max-width: 1240px;
+    min-height: 100vh;
 
-// main {
-//     display: flex;
-//     flex-direction: column;
-//     height: 68px;
-//     margin: auto; /* Center horizontally */
-//     max-width: 1240px; /* Use max-width instead of width for responsiveness */
-//     min-height: 100vh; /* Use min-height to ensure the content is centered vertically */
-// }
+    justify-content: center;
+    // margin: auto;
+    align-content: center;
+    width: 100%;
+}
 
-// .background {
-//     height: 223px;
-//     flex-shrink: 0;
-//     border-radius: 25px;
+.background {
+    height: 223px;
+    flex-shrink: 0;
+    border-radius: 25px;
 
-//     background: #F6F6F6 url('../assets/background.png') no-repeat center center;
-//     background-size: cover; // or 'contain' based on your preference
-// }
-
-
-    /* Styles specific to the about route */
-    // color: violet;
-    // a {
-    //   color: orange;
-    // }
-    .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    .button-container {
-  
-    }
-  
-    main {
-      display: flex;
-      flex-direction: column;
-      // height: 68px;
-    //   margin: auto; 
-      max-width: 1240px; 
-      min-height: 100vh; 
-    }
-  
-    .background {
-      height: 223px;
-      flex-shrink: 0;
-      border-radius: 25px;
-  
-      background: #F6F6F6 url('../assets/background.png') no-repeat center center;
-      background-size: cover;
-    }
+    background: #f6f6f6 url("../assets/background.png") no-repeat center center;
+    background-size: cover;
+}

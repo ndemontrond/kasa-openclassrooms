@@ -5,6 +5,7 @@ function Footer() {
     return (
         <footer className="footer-container">
             <Logo />
+            <p>© 2020 Kasa. All rights reserved</p>
         </footer>
     );
 }

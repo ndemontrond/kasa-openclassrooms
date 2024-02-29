@@ -2,6 +2,27 @@
   display: flex;
   gap: 50px;
   color: #ff6060;
+  margin-top: 45px;
+  max-width: 1240px;
+  width: 100%;
+  align-content: center;
+}
+
+.nav-link {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+}
+
+.nav-link.active {
+  text-decoration-line: underline;
 }
 
 .logo {
@@ -13,6 +34,18 @@
 .navigation-container {
   display: flex;
   gap: 57px;
+}
+
+@media (max-width: 575.98px) {
+  .header-container {
+    gap: 0px;
+  }
+  .header-container .navigation-container {
+    gap: 26px;
+  }
+  .header-container .navigation-container .nav-link {
+    font-size: 0.75rem;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

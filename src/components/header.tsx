@@ -3,6 +3,7 @@ import "../styles/CSS/components/header.css";
 import AboutButton from "../components/buttons/about";
 import HomeButton from "../components/buttons/home";
 import Logo from "../components/logo";
+import { NavLink } from "react-router-dom";
 
 function Header() {
     return (
@@ -10,10 +11,14 @@ function Header() {
             <Logo />
             <ul className="navigation-container">
                 <li>
-                    <HomeButton />
+                    <NavLink to="/" className="nav-link">
+                        Acceuil
+                    </NavLink>
                 </li>
                 <li>
-                    <AboutButton />
+                    <NavLink to="/about" className="nav-link">
+                        A Propos
+                    </NavLink>
                 </li>
             </ul>
         </nav>

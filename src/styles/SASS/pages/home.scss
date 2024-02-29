@@ -1,19 +1,11 @@
-
-    /* Styles specific to the home route */
-    // color: black;
-// main {
-//     width: 54px;
-// }
-
-
-
-
-
-
+/* Styles specific to the home route */
+main {
+    display: flex;
+    gap: 50px;
+}
 
 .red-square {
     width: 340px;
     height: 340px;
-    color: #FF6060;
+    color: #ff6060;
 }
-

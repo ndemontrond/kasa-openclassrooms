@@ -2,6 +2,31 @@
     display: flex;
     gap: 50px;
     color: #ff6060;
+    margin-top: 45px;
+
+    max-width: 1240px;
+    width: 100%;
+
+    align-content: center;
+}
+
+.nav-link {
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+    outline: none;
+
+    color: black;
+    text-align: right;
+    font-family: Montserrat;
+    // font-size: 24px;
+    font-size: 1.5rem;
+}
+
+.nav-link.active {
+    text-decoration-line: underline;
 }
 
 .logo {
@@ -15,14 +40,22 @@
     gap: 57px;
 }
 
-// .navigation-link {
-//     text-decoration: none;
+// text-decoration-line: underline;
 
-//     color: #FF6060;
+@media (max-width: 575.98px) {
+    .header-container {
+        gap: 0px;
 
-//     text-align: right;
-//     font-family: Montserrat;
-//     font-size: 24px;
-//     font-weight: 700;
-//     // text-decoration-line: underline;
+        .navigation-container {
+            gap: 26px;
+            .nav-link {
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
+
+// ol,
+// ul {
+//     list-style: none;
 // }

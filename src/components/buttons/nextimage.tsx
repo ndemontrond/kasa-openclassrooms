@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faChevronRight} from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/CSS/components/nextimage.css";
 
 const NextImageButton = ({ setCurrentImageIndex, images }) => {
@@ -9,7 +9,6 @@ const NextImageButton = ({ setCurrentImageIndex, images }) => {
     return (
         <div id="nextImageButton">
             <FontAwesomeIcon icon={faChevronRight} onClick={nextImage} />
-            {/* <button onClick={nextImage}>Next</button> */}
         </div>
     );
 };

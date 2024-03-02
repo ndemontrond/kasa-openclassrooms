@@ -6,6 +6,16 @@
   max-width: 1240px;
   width: 100%;
   align-content: center;
+  flex-shrink: 0; /* Prevent footer from shrinking */
+}
+@media (max-width: 768px) {
+  .header-container {
+    margin: 20px 20px 0px 20px;
+    width: calc(100% - 40px);
+  }
+  .header-container .svg-container svg {
+    width: 145px;
+  }
 }
 
 .nav-link {
@@ -20,15 +30,14 @@
   font-family: Montserrat;
   font-size: 1.5rem;
 }
+@media (max-width: 768px) {
+  .nav-link {
+    font-size: 0.8rem;
+  }
+}
 
 .nav-link.active {
   text-decoration-line: underline;
-}
-
-.logo {
-  height: 68px;
-  fill: #ff6060;
-  color: blue;
 }
 
 .navigation-container {

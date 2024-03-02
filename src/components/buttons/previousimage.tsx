@@ -11,7 +11,6 @@ const PrevImageButton = ({ setCurrentImageIndex, images }) => {
 
     return (
         <div id="previousImageButton">
-            {/* <button onClick={prevImage}>Previous</button> */}
             <FontAwesomeIcon icon={faChevronLeft} onClick={prevImage} />
         </div>
     );

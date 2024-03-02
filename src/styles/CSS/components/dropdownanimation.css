@@ -1,17 +1,13 @@
 /* DropDownAnimation.css */
 .dropdown-container {
-  position: relative;
-  display: inline-block;
-  background-color: var(--bg);
+  display: flex;
+  flex-direction: column;
   color: var(--bg-text-color);
-  border-radius: 5px;
+  width: 100%;
 }
 
 .dropdown-content {
   display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
   background-color: var(--bg-accent);
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -37,6 +33,36 @@
 a {
   display: flex;
   align-items: center;
+}
+
+.dropdown-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--bg);
+  border-radius: 5px;
+}
+
+.dropdown-title {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+}
+@media (max-width: 768px) {
+  .dropdown-title {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 13px;
+  }
+}
+
+.arrow-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-icon.open {
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=dropdownanimation.css.map */

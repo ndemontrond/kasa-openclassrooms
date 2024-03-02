@@ -1,4 +1,9 @@
-svg {
-    width: 145px;
+.svg-container {
+    display: flex;
+    width: fit-content;
 }
-//à changer / temporaire
+
+.svg-container svg {
+    width: 100%;
+    height: 100%;
+}

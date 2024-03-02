@@ -1,3 +1,5 @@
+@import "./../variables";
+
 .header-container {
     display: flex;
     gap: 50px;
@@ -8,6 +10,16 @@
     width: 100%;
 
     align-content: center;
+    flex-shrink: 0; /* Prevent footer from shrinking */
+
+    @media (max-width: $breakpoint-tablet) {
+        margin: 20px 20px 0px 20px;
+        width: calc(100% - 40px);
+
+        .svg-container svg {
+            width: 145px;
+        }
+    }
 }
 
 .nav-link {
@@ -23,16 +35,14 @@
     font-family: Montserrat;
     // font-size: 24px;
     font-size: 1.5rem;
+
+    @media (max-width: $breakpoint-tablet) {
+        font-size: 0.8rem;
+    }
 }
 
 .nav-link.active {
     text-decoration-line: underline;
-}
-
-.logo {
-    height: 68px;
-    fill: #ff6060;
-    color: blue;
 }
 
 .navigation-container {
@@ -54,6 +64,10 @@
         }
     }
 }
+
+// .header-container .svg-container {
+//     height: 68px;
+// }
 
 // ol,
 // ul {

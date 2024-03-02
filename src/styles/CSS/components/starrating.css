@@ -2,14 +2,45 @@
   display: flex;
   justify-content: flex-end;
   gap: 16px;
+  margin-top: 21px;
+  margin-bottom: 31px;
+  /* Firefox support for min-width and max-width */
+}
+@media (max-width: 768px) {
+  #starsContainer {
+    gap: 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+    height: 18px;
+  }
+}
+@supports (-moz-appearance: none) {
+  #starsContainer {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 #starsContainer svg {
   max-width: fit-content;
+  align-items: center;
+  /* Firefox support for max-width */
+}
+@supports (-moz-appearance: none) {
+  #starsContainer svg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .starsStyling {
   font-size: 32px;
+}
+@media (max-width: 768px) {
+  .starsStyling {
+    font-size: 22px;
+  }
 }
 
 /*# sourceMappingURL=starrating.css.map */

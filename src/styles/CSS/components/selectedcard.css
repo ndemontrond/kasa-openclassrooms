@@ -1,16 +1,28 @@
 .selected-card {
-  width: 1240px;
+  max-width: 1240px;
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  flex: 1;
+}
+@media (max-width: 768px) {
+  .selected-card {
+    max-width: 100%;
+    margin: 0px 20px;
+    gap: 15px;
+  }
 }
 
 #cardTitle {
   color: #ff6060;
   font-family: Montserrat;
   font-size: 36px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 142.6%; /* 51.336px */
+}
+@media (max-width: 768px) {
+  #cardTitle {
+    font-size: 18px;
+  }
 }
 
 #cardLocation {
@@ -23,6 +35,15 @@
 #cardTagsContainer {
   display: flex;
   gap: 10px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  #cardTagsContainer {
+    flex-wrap: wrap;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
 }
 
 .cardTags {
@@ -41,6 +62,12 @@
   align-items: center; /* Vertically center */
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .cardTags {
+    font-size: 10px;
+    min-width: 84px;
+  }
+}
 
 #dropDownAnimationContainer {
   display: flex;
@@ -51,6 +78,13 @@
   display: flex;
   flex-direction: row;
   align-items: stretch; /* This ensures equal height */
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  #textContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 #leftSideContainer,
@@ -60,12 +94,37 @@
   flex: 1;
   width: 50%;
 }
+@media (max-width: 768px) {
+  #leftSideContainer,
+  #rightSideContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #leftSideContainer {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #rightSideContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+}
 
 #hostContainer {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: end;
+}
+@media (max-width: 768px) {
+  #hostContainer {
+    flex-direction: row;
+    order: 1; /* default is 0 */
+  }
 }
 
 #hostName {
@@ -74,6 +133,12 @@
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
+  word-spacing: 500px;
+}
+@media (max-width: 768px) {
+  #hostName {
+    font-size: 12px;
+  }
 }
 
 #hostPicture {
@@ -81,6 +146,26 @@
   height: 64px;
   border-radius: 50%;
   object-fit: cover;
+}
+@media (max-width: 768px) {
+  #hostPicture {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+#dropDownContainer {
+  flex-basis: 100%; /* Force the  container to take full width making it go on a second line */
+  display: flex;
+  gap: 75px;
+  align-items: flex-start;
+}
+@media (max-width: 768px) {
+  #dropDownContainer {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=selectedcard.css.map */

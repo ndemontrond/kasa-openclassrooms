@@ -2,7 +2,7 @@
 import "../styles/CSS/components/logo.css";
 const Logo = () => {
     return (
-        <div>
+        <div className="svg-container">
             <svg
                 width="211"
                 height="68"

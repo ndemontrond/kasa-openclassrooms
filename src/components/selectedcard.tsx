@@ -3,7 +3,7 @@ import DropDownAnimation from "../components/dropdownanimation2";
 import { useParams } from "react-router-dom";
 import logementsData from "../data/logements.json";
 import "../styles/CSS/components/selectedcard.css";
-import Carrousel from "./carrousel";
+import Carrousel from "./carousel";
 import StarRating from "./starRating";
 
 const SelectedCard = () => {
@@ -30,21 +30,23 @@ const SelectedCard = () => {
                             </p>
                         ))}
                     </div>
-                    <DropDownAnimation>
-                        <p>{selectedCard.description}</p>
-                    </DropDownAnimation>
                 </div>
                 <div id="rightSideContainer">
                     <div id="hostContainer">
-                        <p id="hostName">{selectedCard.host.name}</p>
+                        <span id="hostName">{selectedCard.host.name}</span>
                         <img
                             src={selectedCard.host.picture}
                             alt={selectedCard.host.name}
                             id="hostPicture"
                         />
                     </div>
-                    <StarRating rating={selectedCard.rating}/>
-                    <DropDownAnimation>
+                    <StarRating rating={selectedCard.rating} />
+                </div>
+                <div id="dropDownContainer">
+                    <DropDownAnimation title="Description">
+                        <p>{selectedCard.description}</p>
+                    </DropDownAnimation>
+                    <DropDownAnimation title="Équipements">
                         <ul>
                             {selectedCard.equipments.map((equipment, index) => (
                                 <li key={index}>{equipment}</li>

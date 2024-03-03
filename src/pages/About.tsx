@@ -1,4 +1,4 @@
-import DropDownAnimation from "../components/dropdownanimation2.tsx";
+import DropDownAnimation from "../components/dropdownanimation.tsx";
 import BackgroundBanner from "../components/backgroundbanner";
 
 import "../styles/CSS/pages/about.css";

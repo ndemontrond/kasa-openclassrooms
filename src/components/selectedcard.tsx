@@ -1,7 +1,7 @@
 // SelectedCard.tsx
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
-import DropDownAnimation from "../components/dropdownanimation2";
+import DropDownAnimation from "./dropdownanimation";
 import { useParams } from "react-router-dom";
 import logementsData from "../data/logements.json";
 import "../styles/CSS/components/selectedcard.css";

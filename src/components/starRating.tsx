@@ -2,8 +2,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "../styles/CSS/components/starrating.css";
 
-const StarRating = ({ rating }) => {
-    const generateStars = (rating) => {
+interface StarRatingProps {
+    rating: number; 
+}
+
+const StarRating = ({ rating }: StarRatingProps) => {
+    const generateStars = (rating: number) => {
         const stars = [];
         for (let i = 1; i <= 5; i++) {
             // Determine star color based on rating

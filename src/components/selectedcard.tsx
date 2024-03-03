@@ -17,6 +17,8 @@ const SelectedCard = () => {
         return <NoMatch />; // Render the NoMatch component
     }
 
+    const rating = parseInt(selectedCard.rating);
+
     return (
         <div className="selected-card">
             <Carrousel selectedCard={selectedCard} />
@@ -41,7 +43,7 @@ const SelectedCard = () => {
                             id="hostPicture"
                         />
                     </div>
-                    <StarRating rating={selectedCard.rating} />
+                    <StarRating rating={rating} />
                 </div>
                 <div id="dropDownContainer">
                     <DropDownAnimation title="Description">

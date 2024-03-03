@@ -2,14 +2,14 @@
 
 #nextImageButton {
     color: $bg-text-color-inverse;
-    font-size: 80px;
+    font-size: $fs-80;
     position: absolute;
     right: 25px;
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
     @media (max-width: $breakpoint-tablet) {
-        font-size: 24px;
+        font-size: $fs-24;
     }
 }
 

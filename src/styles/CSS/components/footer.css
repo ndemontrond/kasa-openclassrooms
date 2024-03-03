@@ -8,7 +8,6 @@
   width: 100%;
   flex-shrink: 0; /* Prevent footer from shrinking */
   justify-content: space-around;
-  font-size: 2px;
   gap: 30px;
   padding-top: 66px;
   padding-bottom: 30px;
@@ -30,13 +29,13 @@
 }
 
 .footer-container span {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 @media (max-width: 768px) {
   .footer-container span {
     width: 122px;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 

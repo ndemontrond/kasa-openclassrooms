@@ -20,7 +20,7 @@
 #currentImage {
   position: absolute;
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   bottom: 25px;
   z-index: 1;
   left: 50%;

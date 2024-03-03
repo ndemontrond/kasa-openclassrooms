@@ -27,12 +27,12 @@
 
 .dropdown-content.open p {
   display: block;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 @media (max-width: 768px) {
   .dropdown-content.open p {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
 }
 
@@ -47,14 +47,14 @@
 
 .dropdown-title {
   color: white;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 @media (max-width: 768px) {
   .dropdown-title {
     flex-direction: column;
     gap: 20px;
-    font-size: 13px;
+    font-size: 0.813rem;
   }
 }
 

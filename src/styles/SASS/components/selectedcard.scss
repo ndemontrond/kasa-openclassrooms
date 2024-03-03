@@ -15,16 +15,16 @@
 
 #cardTitle {
     color: $text-color;
-    font-size: 36px;
+    font-size: $fs-36;
     font-weight: $font-weight-medium;
     @media (max-width: $breakpoint-tablet) {
-        font-size: 18px;
+        font-size: $fs-18;
     }
 }
 
 #cardLocation {
     color: $bg-text-color;
-    font-size: 18px;
+    font-size: $fs-18;
     font-weight: $font-weight-medium;
 }
 
@@ -50,13 +50,13 @@
 
     color: $bg-text-color-inverse;
     text-align: center;
-    font-size: 14px;
+    font-size: $fs-14;
     font-weight: $font-weight-bold;
     display: flex;
     align-items: center; /* Vertically center */
     justify-content: center;
     @media (max-width: $breakpoint-tablet) {
-        font-size: 10px;
+        font-size: $fs-10;
         min-width: 84px;
     }
 }
@@ -112,11 +112,11 @@
 #hostName {
     color: $text-color;
     text-align: right;
-    font-size: 18px;
+    font-size: $fs-18;
     font-weight: $font-weight-medium;
     word-spacing: 500px;
     @media (max-width: $breakpoint-tablet) {
-        font-size: 12px;
+        font-size: $fs-12;
     }
 }
 
@@ -139,6 +139,6 @@
     @media (max-width: $breakpoint-tablet) {
         flex-direction: column;
         gap: 20px;
-        font-size: 13px;
+        font-size: $fs-13;
     }
 }

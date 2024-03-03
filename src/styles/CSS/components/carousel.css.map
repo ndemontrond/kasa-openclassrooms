@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../SASS/components/carousel.scss","../../SASS/_variables.scss"],"names":[],"mappings":"AAEA;EACI;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EACA;;AACA;EANJ;IAOQ;IACA;;;;AAIR;EACI;EACA,OCToB;EDUpB;EACA;EACA;EACA;EACA","file":"carousel.css"}
+{"version":3,"sourceRoot":"","sources":["../../SASS/components/carousel.scss","../../SASS/_variables.scss"],"names":[],"mappings":"AAEA;EACI;EACA;;;AAGJ;EACI;EACA;EACA;EACA;EACA;;AACA;EANJ;IAOQ;IACA;;;;AAIR;EACI;EACA,OCToB;EDUpB,WCCI;EDAJ;EACA;EACA;EACA","file":"carousel.css"}

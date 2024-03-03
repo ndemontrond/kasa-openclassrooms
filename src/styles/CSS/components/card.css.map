@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../SASS/components/card.scss","../../SASS/_variables.scss"],"names":[],"mappings":"AAEA;EACI,OCSoB;EDRpB;EACA;EACA;;;AAcJ;EACI;EACA;EACA;EACA;EAEA;EACA;EACA;EACA,sCAKG;;;AAGP;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACC","file":"card.css"}
+{"version":3,"sourceRoot":"","sources":["../../SASS/components/card.scss","../../SASS/_variables.scss"],"names":[],"mappings":"AAEA;EACI,OCSoB;EDRpB;EACA,WCkBI;EDjBJ;;;AAcJ;EACI;EACA;EACA;EACA;EAEA;EACA;EACA;EACA,sCAKG;;;AAGP;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACC","file":"card.css"}

@@ -31,10 +31,10 @@
 
 .dropdown-content.open p {
     display: block;
-    font-size: 18px;
+    font-size: $fs-18;
     font-weight: $font-weight-light;
     @media (max-width: $breakpoint-tablet) {
-        font-size: 12px;
+        font-size: $fs-12;
     }
 }
 
@@ -49,12 +49,12 @@
 
 .dropdown-title {
     color: $bg-text-color-inverse;
-    font-size: 18px;
+    font-size: $fs-18;
     font-weight: $font-weight-bold;
     @media (max-width: $breakpoint-tablet) {
         flex-direction: column;
         gap: 20px;
-        font-size: 13px;
+        font-size: $fs-13;
     }
 }
 

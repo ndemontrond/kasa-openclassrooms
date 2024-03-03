@@ -28,11 +28,11 @@
 }
 
 .starsStyling {
-  font-size: 32px;
+  font-size: 2rem;
 }
 @media (max-width: 768px) {
   .starsStyling {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 

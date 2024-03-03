@@ -20,7 +20,7 @@
 #currentImage {
     position: absolute;
     color: $bg-text-color-inverse;
-    font-size: 18px;
+    font-size: $fs-18;
     bottom: 25px;
     z-index: 1;
     left: 50%;

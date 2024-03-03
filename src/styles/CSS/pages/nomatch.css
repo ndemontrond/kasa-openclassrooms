@@ -8,37 +8,37 @@
 
 .error {
   color: #ff6060;
-  font-size: 288px;
+  font-size: 18rem;
   font-weight: 700;
   line-height: 8rem;
 }
 @media (max-width: 768px) {
   .error {
-    font-size: 96px;
+    font-size: 6rem;
   }
 }
 
 .error-message {
   color: #ff6060;
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: 500;
 }
 @media (max-width: 768px) {
   .error-message {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0px 30px;
   }
 }
 
 .return-home {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   text-decoration-line: underline;
   color: black;
 }
 @media (max-width: 768px) {
   .return-home {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 

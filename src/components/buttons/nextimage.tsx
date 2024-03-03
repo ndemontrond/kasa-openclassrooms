@@ -14,9 +14,7 @@ const NextImageButton: React.FC<NextImageButtonProps> = ({
     images,
 }) => {
     const nextImage = () => {
-        setCurrentImageIndex(
-            (prevIndex) => (prevIndex + 1) % images.length
-        );
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
     return (
         <div id="nextImageButton">

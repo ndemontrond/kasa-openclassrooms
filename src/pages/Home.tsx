@@ -13,9 +13,9 @@ const Home = () => {
 
     return (
         <main>
-                        <div id="home-container">
-            <BackgroundBanner />
-            <CardList data={logementsData} onCardClick={handleCardClick} />
+            <div id="home-container">
+                <BackgroundBanner />
+                <CardList data={logementsData} onCardClick={handleCardClick} />
             </div>
         </main>
     );

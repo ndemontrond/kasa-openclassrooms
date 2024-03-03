@@ -5,7 +5,11 @@ import "../styles/CSS/pages/about.css";
 
 const About = () => {
     const rootElement = document.getElementById("root");
-    rootElement.classList.add("about");
+    if (rootElement) {
+        rootElement.classList.add("about");
+    } else {
+        console.error("Root element not found in the DOM");
+    }
     return (
         <main>
             <div id="about-container">

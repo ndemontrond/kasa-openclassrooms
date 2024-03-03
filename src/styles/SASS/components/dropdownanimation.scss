@@ -1,67 +1,60 @@
-@import "./../variables";
-
 /* DropDownAnimation.css */
+
+@import "./../variables";
 
 .dropdown-container {
     display: flex;
     flex-direction: column;
     color: $bg-text-color;
     width: 100%;
-}
-
-.dropdown-content {
-    display: block;
-    background-color: $bg-accent;
-    min-width: 160px;
-    max-height: 0px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 0px 20px;
-    transition:
-        max-height 0.3s ease-in-out,
-        padding 0.3s ease-in-out;
-}
-
-.dropdown-content.open {
-    max-height: 600px;
-    padding: 20px 20px;
-}
-.dropdown-content p {
-    display: none;
-}
-
-.dropdown-content.open p {
-    display: block;
-    font-size: $fs-18;
-    font-weight: $font-weight-light;
-    @media (max-width: $breakpoint-tablet) {
-        font-size: $fs-12;
+    .dropdown-button {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        background-color: $bg;
+        border-radius: 5px;
+        align-items: center;
+        .dropdown-title {
+            color: $bg-text-color-inverse;
+            font-size: $fs-18;
+            font-weight: $font-weight-bold;
+            @media (max-width: $breakpoint-tablet) {
+                flex-direction: column;
+                gap: 20px;
+                font-size: $fs-13;
+            }
+        }
+        .arrow-icon {
+            transition: transform 0.3s ease-in-out;
+            &.open {
+                transform: rotate(180deg);
+            }
+        }
     }
-}
-
-.dropdown-button {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: $bg;
-    border-radius: 5px;
-    align-items: center;
-}
-
-.dropdown-title {
-    color: $bg-text-color-inverse;
-    font-size: $fs-18;
-    font-weight: $font-weight-bold;
-    @media (max-width: $breakpoint-tablet) {
-        flex-direction: column;
-        gap: 20px;
-        font-size: $fs-13;
+    .dropdown-content {
+        display: block;
+        background-color: $bg-accent;
+        min-width: 160px;
+        max-height: 0px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 0px 20px;
+        transition:
+            max-height 0.3s ease-in-out,
+            padding 0.3s ease-in-out;
+        &.open {
+            max-height: 600px;
+            padding: 20px 20px;
+            p {
+                display: block;
+                font-size: $fs-18;
+                font-weight: $font-weight-light;
+                @media (max-width: $breakpoint-tablet) {
+                    font-size: $fs-12;
+                }
+            }
+        }
+        p {
+            display: none;
+        }
     }
-}
-
-.arrow-icon {
-    transition: transform 0.3s ease-in-out;
-}
-
-.arrow-icon.open {
-    transform: rotate(180deg);
 }

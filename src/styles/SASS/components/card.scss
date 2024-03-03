@@ -1,11 +1,6 @@
-@import "./../variables";
+/* card.scss */
 
-.card-title {
-    color: $bg-text-color-inverse;
-    margin: 20px;
-    font-size: $fs-18;
-    font-weight: $font-weight-bold;
-}
+@import "./../variables";
 
 // Define a mixin to generate flex item styles
 @mixin card {
@@ -16,35 +11,21 @@
     display: flex;
     align-items: flex-end;
     position: relative;
-}
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 
-.card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    // aspect-ratio: 1 / 1;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background-color: rgba(
-        0,
-        0,
-        0,
-        0.2
-    ); /* Adjust the opacity (last value) as needed */
-}
-
-.card:hover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    aspect-ratio: 1 / 1;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-     cursor: pointer;
+    &:hover::before {
+        background-color: transparent;
+        cursor: pointer;
+    }
 }
 
 // Define a mixin to generate flex container styles
@@ -57,5 +38,18 @@
     gap: 3.125rem;
     padding-top: 3.125rem;
     padding-bottom: 3.125rem;
+    .card-title {
+        color: $bg-text-color-inverse;
+        margin: 20px;
+        font-size: $fs-18;
+        font-weight: $font-weight-bold;
+    }
 }
 
+.card {
+    @include card;
+}
+
+.card-container {
+    @include card-container;
+}

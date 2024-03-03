@@ -1,3 +1,5 @@
+/* starrating.scss */
+
 @import "./../variables";
 
 #starsContainer {
@@ -6,8 +8,7 @@
     gap: 16px;
     margin-top: 21px;
     margin-bottom: 31px;
-    // min-width: 0;
-            align-items: center;
+    align-items: center;
     @media (max-width: $breakpoint-tablet) {
         gap: 2px;
         margin-top: 0;
@@ -15,20 +16,18 @@
         align-items: center;
         height: 18px;
     }
-    /* Firefox support for min-width and max-width */
+    /* Firefox support */
     @supports (-moz-appearance: none) {
         width: 100%;
         height: 100%;
     }
-}
-
-#starsContainer svg {
-    align-items: center;
-}
-
-.starsStyling {
-    font-size: $fs-32;
-    @media (max-width: $breakpoint-tablet) {
-        font-size: $fs-22;
+    svg {
+        align-items: center;
+    }
+    .starsStyling {
+        font-size: $fs-32;
+        @media (max-width: $breakpoint-tablet) {
+            font-size: $fs-22;
+        }
     }
 }

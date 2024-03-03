@@ -1,15 +1,14 @@
+/* Styles specific to the about route  */
 #root.about {
   gap: 38px;
 }
-
-#about-container {
+#root.about #about-container {
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin: 0px 20px;
 }
-
-.background {
+#root.about #about-container .background {
   height: 223px;
   flex-shrink: 0;
   border-radius: 25px;

@@ -5,8 +5,7 @@
   gap: 22px;
   margin: 0px 20px;
 }
-
-.background {
+#home-container .background {
   height: 223px;
   flex-shrink: 0;
   border-radius: 25px;

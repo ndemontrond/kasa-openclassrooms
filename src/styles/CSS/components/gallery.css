@@ -1,10 +1,14 @@
-.card-title {
-  color: white;
-  margin: 20px;
-  font-size: 1.125rem;
-  font-weight: 700;
+/* gallery.scss */
+/* card.scss */
+.card {
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
 }
-
 .card::before {
   content: "";
   position: absolute;
@@ -13,19 +17,28 @@
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.2); /* Adjust the opacity (last value) as needed */
+  background-color: rgba(0, 0, 0, 0.2);
 }
-
 .card:hover::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  aspect-ratio: 1/1;
-  width: 100%;
-  height: 100%;
   background-color: transparent;
   cursor: pointer;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+  gap: 3.125rem;
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.card-container .card-title {
+  color: white;
+  margin: 20px;
+  font-size: 1.125rem;
+  font-weight: 700;
 }
 
 @media (min-width: 768px) {
@@ -39,6 +52,12 @@
     padding-top: 3.125rem;
     padding-bottom: 3.125rem;
   }
+  .card-container .card-title {
+    color: white;
+    margin: 20px;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
   .card-container .card {
     background-size: cover;
     background-position: center;
@@ -48,6 +67,20 @@
     align-items: flex-end;
     position: relative;
     flex-basis: calc((100% - 12.5rem) / 3);
+  }
+  .card-container .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .card-container .card:hover::before {
+    background-color: transparent;
+    cursor: pointer;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -61,6 +94,12 @@
     padding-top: 3.125rem;
     padding-bottom: 3.125rem;
   }
+  .card-container .card-title {
+    color: white;
+    margin: 20px;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
   .card-container .card {
     background-size: cover;
     background-position: center;
@@ -70,6 +109,20 @@
     align-items: flex-end;
     position: relative;
     flex-basis: calc((100% - 9.375rem) / 2);
+  }
+  .card-container .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .card-container .card:hover::before {
+    background-color: transparent;
+    cursor: pointer;
   }
 }
 @media (max-width: 575.98px) {
@@ -86,6 +139,12 @@
     gap: 20px;
     padding: 0;
   }
+  .card-container .card-title {
+    color: white;
+    margin: 20px;
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
   .card-container .card {
     background-size: cover;
     background-position: center;
@@ -96,6 +155,20 @@
     position: relative;
     height: 100%;
     flex-basis: 100%;
+  }
+  .card-container .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .card-container .card:hover::before {
+    background-color: transparent;
+    cursor: pointer;
   }
 }
 

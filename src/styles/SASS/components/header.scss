@@ -1,3 +1,5 @@
+/* header.scss */
+
 @import "./../variables";
 
 .header-container {
@@ -20,38 +22,28 @@
         }
         gap: 0;
     }
-}
-
-.header-container .svg-container {
-    height: 68px;
-    @media (max-width: $breakpoint-tablet) {
-        width: 122px;
+    .svg-container {
+        height: 68px;
+        @media (max-width: $breakpoint-tablet) {
+            width: 122px;
+        }
     }
-}
-
-.nav-link {
-    border: none;
-    margin: 0;
-    padding: 0;
-    background: none;
-    cursor: pointer;
-    outline: none;
-    color: $bg-text-color;
-    text-align: right;
-    font-size: $fs-24;
-    @media (max-width: $breakpoint-tablet) {
-        font-size: $fs-16;
-    }
-}
-
-.nav-link.active {
-    text-decoration-line: underline;
-}
-
-.navigation-container {
-    display: flex;
-    gap: 57px;
-    @media (max-width: $breakpoint-tablet) {
-        gap: 26px;
+    .navigation-container {
+        display: flex;
+        gap: 57px;
+        @media (max-width: $breakpoint-tablet) {
+            gap: 26px;
+        }
+        .nav-link {
+            cursor: pointer;
+            color: $bg-text-color;
+            font-size: $fs-24;
+            @media (max-width: $breakpoint-tablet) {
+                font-size: $fs-16;
+            }
+            &.active {
+                text-decoration-line: underline;
+            }
+        }
     }
 }

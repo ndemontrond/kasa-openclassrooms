@@ -1,3 +1,4 @@
+/* footer.scss */
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -18,7 +19,6 @@
     padding-bottom: 58px;
   }
 }
-
 .footer-container .svg-container {
   height: 40px;
 }
@@ -27,7 +27,6 @@
     width: 122px;
   }
 }
-
 .footer-container span {
   font-size: 1.5rem;
   font-weight: 500;

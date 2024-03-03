@@ -7,13 +7,12 @@
     flex-direction: column;
     gap: 22px;
     margin: 0px 20px;
-}
-
-.background {
-    height: 223px;
-    flex-shrink: 0;
-    border-radius: 25px;
-
-    background: $bg-accent url("../assets/background.png") no-repeat center center;
-    background-size: cover;
+    .background {
+        height: 223px;
+        flex-shrink: 0;
+        border-radius: 25px;
+        background: $bg-accent url("../assets/background.png") no-repeat center
+            center;
+        background-size: cover;
+    }
 }

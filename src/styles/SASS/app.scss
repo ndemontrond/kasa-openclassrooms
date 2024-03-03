@@ -108,7 +108,8 @@ section {
     display: block;
 }
 ol,
-ul {
+ul,
+li {
     list-style: none;
 }
 table {
@@ -122,13 +123,6 @@ table {
 
 /* ********************** */
 
-$breakpoint-tablet: 768px;
-
-:root {
-    list-style-type: none;
-    /* background-color: #242424; */
-}
-
 #root {
     display: flex;
     flex-direction: column;
@@ -139,19 +133,15 @@ $breakpoint-tablet: 768px;
     @media (max-width: $breakpoint-tablet) {
         gap: 27px;
     }
-    // &.about {
-    //     gap: 0;
-    // }
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 50px;
-    max-width: 1240px;
-    min-height: 100%;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 50px;
+        max-width: 1240px;
+        min-height: 100%;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
 }

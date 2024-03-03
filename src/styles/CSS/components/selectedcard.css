@@ -1,3 +1,4 @@
+/* selectedcard.scss */
 .selected-card {
   max-width: 1240px;
   display: flex;
@@ -12,39 +13,65 @@
     gap: 15px;
   }
 }
-
-#cardTitle {
+.selected-card #textContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* This ensures equal height */
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .selected-card #textContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.selected-card #textContainer #leftSideContainer,
+.selected-card #textContainer #rightSideContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .selected-card #textContainer #leftSideContainer,
+  .selected-card #textContainer #rightSideContainer {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .selected-card #textContainer #leftSideContainer {
+    gap: 10px;
+  }
+}
+.selected-card #textContainer #leftSideContainer #cardTitle {
   color: #ff6060;
   font-size: 2.25rem;
   font-weight: 500;
 }
 @media (max-width: 768px) {
-  #cardTitle {
+  .selected-card #textContainer #leftSideContainer #cardTitle {
     font-size: 1.125rem;
   }
 }
-
-#cardLocation {
+.selected-card #textContainer #leftSideContainer #cardLocation {
   color: black;
   font-size: 1.125rem;
   font-weight: 500;
 }
-
-#cardTagsContainer {
+.selected-card #textContainer #leftSideContainer #cardTagsContainer {
   display: flex;
   gap: 10px;
   margin-top: 24px;
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
-  #cardTagsContainer {
+  .selected-card #textContainer #leftSideContainer #cardTagsContainer {
     flex-wrap: wrap;
     margin-top: 5px;
     margin-bottom: 0;
   }
 }
-
-.cardTags {
+.selected-card #textContainer #leftSideContainer #cardTagsContainer .cardTags {
   border-radius: 10px;
   background: #ff6060;
   min-width: 115px;
@@ -60,71 +87,30 @@
   justify-content: center;
 }
 @media (max-width: 768px) {
-  .cardTags {
+  .selected-card #textContainer #leftSideContainer #cardTagsContainer .cardTags {
     font-size: 0.625rem;
     min-width: 84px;
   }
 }
-
-#dropDownAnimationContainer {
-  display: flex;
-  gap: 50px;
-}
-
-#textContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch; /* This ensures equal height */
-  flex-wrap: wrap;
-}
 @media (max-width: 768px) {
-  #textContainer {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-
-#leftSideContainer,
-#rightSideContainer {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  width: 50%;
-}
-@media (max-width: 768px) {
-  #leftSideContainer,
-  #rightSideContainer {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  #leftSideContainer {
-    gap: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  #rightSideContainer {
+  .selected-card #textContainer #rightSideContainer {
     flex-direction: row;
     align-items: center;
   }
 }
-
-#hostContainer {
+.selected-card #textContainer #rightSideContainer #hostContainer {
   display: flex;
   align-items: center;
   gap: 10px;
   justify-content: end;
 }
 @media (max-width: 768px) {
-  #hostContainer {
+  .selected-card #textContainer #rightSideContainer #hostContainer {
     flex-direction: row;
     order: 1; /* default is 0 */
   }
 }
-
-#hostName {
+.selected-card #textContainer #rightSideContainer #hostContainer #hostName {
   color: #ff6060;
   text-align: right;
   font-size: 1.125rem;
@@ -132,32 +118,30 @@
   word-spacing: 500px;
 }
 @media (max-width: 768px) {
-  #hostName {
+  .selected-card #textContainer #rightSideContainer #hostContainer #hostName {
     font-size: 0.75rem;
   }
 }
-
-#hostPicture {
+.selected-card #textContainer #rightSideContainer #hostContainer #hostPicture {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   object-fit: cover;
 }
 @media (max-width: 768px) {
-  #hostPicture {
+  .selected-card #textContainer #rightSideContainer #hostContainer #hostPicture {
     width: 32px;
     height: 32px;
   }
 }
-
-#dropDownContainer {
+.selected-card #textContainer #dropDownContainer {
   flex-basis: 100%; /* Force the  container to take full width making it go on a second line */
   display: flex;
   gap: 75px;
   align-items: flex-start;
 }
 @media (max-width: 768px) {
-  #dropDownContainer {
+  .selected-card #textContainer #dropDownContainer {
     flex-direction: column;
     gap: 20px;
     font-size: 0.813rem;

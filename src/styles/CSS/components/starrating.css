@@ -1,3 +1,4 @@
+/* starrating.scss */
 #starsContainer {
   display: flex;
   justify-content: end;
@@ -5,7 +6,7 @@
   margin-top: 21px;
   margin-bottom: 31px;
   align-items: center;
-  /* Firefox support for min-width and max-width */
+  /* Firefox support */
 }
 @media (max-width: 768px) {
   #starsContainer {
@@ -22,16 +23,14 @@
     height: 100%;
   }
 }
-
 #starsContainer svg {
   align-items: center;
 }
-
-.starsStyling {
+#starsContainer .starsStyling {
   font-size: 2rem;
 }
 @media (max-width: 768px) {
-  .starsStyling {
+  #starsContainer .starsStyling {
     font-size: 1.375rem;
   }
 }

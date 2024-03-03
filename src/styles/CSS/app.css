@@ -107,7 +107,8 @@ section {
 }
 
 ol,
-ul {
+ul,
+li {
   list-style: none;
 }
 
@@ -122,11 +123,6 @@ table {
 }
 
 /* ********************** */
-:root {
-  list-style-type: none;
-  /* background-color: #242424; */
-}
-
 #root {
   display: flex;
   flex-direction: column;
@@ -140,8 +136,7 @@ table {
     gap: 27px;
   }
 }
-
-main {
+#root main {
   display: flex;
   flex-direction: column;
   flex-grow: 1;

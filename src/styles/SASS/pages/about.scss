@@ -1,21 +1,21 @@
+/* Styles specific to the about route  */
+
 @import "./../variables";
 
 #root.about {
     gap: 38px;
-}
-
-#about-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin: 0px 20px;
-}
-
-.background {
-    height: 223px;
-    flex-shrink: 0;
-    border-radius: 25px;
-
-    background: $bg-accent url("../assets/background.png") no-repeat center center;
-    background-size: cover;
+    #about-container {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin: 0px 20px;
+        .background {
+            height: 223px;
+            flex-shrink: 0;
+            border-radius: 25px;
+            background: $bg-accent url("../assets/background.png") no-repeat
+                center center;
+            background-size: cover;
+        }
+    }
 }

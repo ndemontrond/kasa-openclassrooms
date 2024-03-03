@@ -25,7 +25,7 @@
 }
 
 #cardLocation {
-  color: #000;
+  color: black;
   font-size: 18px;
   font-weight: 500;
 }
@@ -51,7 +51,7 @@
   padding: 0 10px;
   height: 25px;
   flex-shrink: 0;
-  color: #fff;
+  color: white;
   text-align: center;
   font-size: 14px;
   font-weight: 700;

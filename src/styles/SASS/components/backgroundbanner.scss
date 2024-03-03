@@ -37,13 +37,13 @@
 .page-title {
     text-align: center;
     font-size: 32px; //à modifier
-    color: white;
+    color: $bg-text-color-inverse;
     position: relative;
     z-index: 1;
-    color: #fff;
+    color: $bg-text-color-inverse;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     -webkit-text-stroke-width: 1;
-    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-color: $bg-text-color;
     font-size: 48px;
     font-weight: $font-weight-bold;
     @media (max-width: $breakpoint-tablet) {

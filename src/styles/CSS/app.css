@@ -123,14 +123,6 @@ table {
 
 /* ********************** */
 :root {
-  --bg: #ff6060;
-  --bg-text-color: black;
-  --bg-accent: #f6f6f6;
-  --text-color: #ff6060;
-  --nav-size: 60px;
-  --border: 1px solid red;
-  --border-radius: 8px;
-  --speed: 500ms;
   list-style-type: none;
   /* background-color: #242424; */
 }

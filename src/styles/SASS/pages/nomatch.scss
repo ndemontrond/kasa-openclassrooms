@@ -9,7 +9,7 @@
 }
 
 .error {
-    color: #ff6060;
+    color: $text-color;
     font-size: 288px;
     font-weight: $font-weight-bold;
     line-height: 8rem;
@@ -19,7 +19,7 @@
 }
 
 .error-message {
-    color: #ff6060;
+    color: $text-color;
     font-size: 36px;
     font-weight: $font-weight-medium;
     @media (max-width: $breakpoint-tablet) {
@@ -32,7 +32,7 @@
     font-size: 18px;
     font-weight: $font-weight-medium;
     text-decoration-line: underline;
-    color: black;
+    color: $bg-text-color;
     @media (max-width: $breakpoint-tablet) {
         font-size: 14px;
     }

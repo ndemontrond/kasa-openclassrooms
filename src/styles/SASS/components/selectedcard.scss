@@ -14,7 +14,7 @@
 }
 
 #cardTitle {
-    color: #ff6060;
+    color: $text-color;
     font-size: 36px;
     font-weight: $font-weight-medium;
     @media (max-width: $breakpoint-tablet) {
@@ -23,7 +23,7 @@
 }
 
 #cardLocation {
-    color: #000;
+    color: $bg-text-color;
     font-size: 18px;
     font-weight: $font-weight-medium;
 }
@@ -42,13 +42,13 @@
 
 .cardTags {
     border-radius: 10px;
-    background: #ff6060;
+    background: $bg;
     min-width: 115px;
     padding: 0 10px;
     height: 25px;
     flex-shrink: 0;
 
-    color: #fff;
+    color: $bg-text-color-inverse;
     text-align: center;
     font-size: 14px;
     font-weight: $font-weight-bold;
@@ -110,7 +110,7 @@
 }
 
 #hostName {
-    color: #ff6060;
+    color: $text-color;
     text-align: right;
     font-size: 18px;
     font-weight: $font-weight-medium;

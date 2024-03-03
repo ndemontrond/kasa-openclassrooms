@@ -107,9 +107,6 @@ nav,
 section {
     display: block;
 }
-// body {
-//     line-height: 1;
-// }
 ol,
 ul {
     list-style: none;
@@ -128,15 +125,6 @@ table {
 $breakpoint-tablet: 768px;
 
 :root {
-    $breakpoint-tablet: 768px;
-    --bg: #ff6060;
-    --bg-text-color: black;
-    --bg-accent: #f6f6f6;
-    --text-color: #ff6060;
-    --nav-size: 60px;
-    --border: 1px solid red;
-    --border-radius: 8px;
-    --speed: 500ms;
     list-style-type: none;
     /* background-color: #242424; */
 }
@@ -146,8 +134,6 @@ $breakpoint-tablet: 768px;
     flex-direction: column;
     justify-content: space-between;
     gap: 50px;
-    // margin: auto;
-    // align-content: center;
     align-items: center;
     min-height: 100vh;
     @media (max-width: $breakpoint-tablet) {

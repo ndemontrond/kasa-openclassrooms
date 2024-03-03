@@ -139,20 +139,33 @@ $breakpoint-tablet: 768px;
     --speed: 500ms;
     list-style-type: none;
     /* background-color: #242424; */
-
-    --break-point-tablet: 768px;
 }
 
-.app-container {
+#root {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 50px;
-    justify-content: center;
-    margin: auto;
-    align-content: center;
+    // margin: auto;
+    // align-content: center;
     align-items: center;
-    min-height: 100svh;
-        @media (max-width: $breakpoint-tablet) {
+    min-height: 100vh;
+    @media (max-width: $breakpoint-tablet) {
         gap: 27px;
     }
+    // &.about {
+    //     gap: 0;
+    // }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 50px;
+    max-width: 1240px;
+    min-height: 100%;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
 }

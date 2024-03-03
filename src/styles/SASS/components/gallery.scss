@@ -31,33 +31,14 @@
 @media (max-width: 575.98px) {
     .card-container {
         @include c.card-container;
-        //flex-direction: column;
-        // padding: 0;
-        $gap: 3.125rem;
-        $containerWidth: 90%;
-        $numOfGaps: 1; // Assuming 2 items per row
-        $minItemWidth: 200px; // Define a minimum width for the item (adjust as needed)
-
-        // flex-direction: column;
+        background-color: transparent;
+        gap: 20px;
+        padding: 0;
 
         .card {
             @include c.card;
-            // flex-basis: calc(
-            //     (90% - (2 * 3.125rem))
-            // ); // Assuming 1 items per row with 2 space of 3.125rem
-
-            // flex-basis: calc(
-            //     (#{$containerWidth} - (#{$numOfGaps} * #{$gap})) / #{$numOfGaps}
-            // );
-
-            // flex: 1;
-
-            // flex-basis: 200px;
-            //width: 200px;
             height: 100%;
-            // width: min-content;
-            // width: calc(100% - 2rem);
-            flex-basis: calc(100% - (2 * 3.125rem));
+            flex-basis: 100%;
         }
     }
 }

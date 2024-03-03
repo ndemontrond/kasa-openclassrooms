@@ -1,11 +1,17 @@
 /* Styles specific to the home route */
-main {
+
+#home-container {
     display: flex;
-    gap: 50px;
+    flex-direction: column;
+    gap: 22px;
+    margin: 0px 20px;
 }
 
-.red-square {
-    width: 340px;
-    height: 340px;
-    color: #ff6060;
+.background {
+    height: 223px;
+    flex-shrink: 0;
+    border-radius: 25px;
+
+    background: #f6f6f6 url("../assets/background.png") no-repeat center center;
+    background-size: cover;
 }

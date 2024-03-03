@@ -1,7 +1,5 @@
 // import { Link } from "react-router-dom";
 import "../styles/CSS/components/header.css";
-import AboutButton from "../components/buttons/about";
-import HomeButton from "../components/buttons/home";
 import Logo from "../components/logo";
 import { NavLink } from "react-router-dom";
 

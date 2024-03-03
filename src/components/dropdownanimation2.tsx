@@ -19,15 +19,19 @@ const DropDownAnimation: React.FC<DropDownAnimationProps> = ({
 
     return (
         <li className={`dropdown-container ${isOpen ? "open" : ""}`}>
-            <a href="#" onClick={toggleDropdown} className="dropdown-button">
+            <dt onClick={toggleDropdown} className="dropdown-button">
                 <span className="dropdown-title">{title}</span>
                 <img
                     src={ArrowLogo}
                     alt="Directional arrow"
                     className={`arrow-icon ${isOpen ? "open" : ""}`}
                 />
-            </a>
-            {isOpen && <div className="dropdown-content">{children}</div>}
+            </dt>
+            {/* {isOpen && ( */}
+            <dd className={`dropdown-content ${isOpen ? "open" : ""}`}>
+                {children}
+            </dd>
+            {/* )} */}
         </li>
     );
 };

@@ -2,6 +2,8 @@
 
 .header-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 50px;
     color: #ff6060;
     margin-top: 45px;
@@ -15,10 +17,17 @@
     @media (max-width: $breakpoint-tablet) {
         margin: 20px 20px 0px 20px;
         width: calc(100% - 40px);
-
         .svg-container svg {
             width: 145px;
         }
+        gap: 0;
+    }
+}
+
+.header-container .svg-container {
+    height: 68px;
+    @media (max-width: $breakpoint-tablet) {
+        width: 122px;
     }
 }
 
@@ -29,15 +38,12 @@
     background: none;
     cursor: pointer;
     outline: none;
-
     color: black;
     text-align: right;
     font-family: Montserrat;
-    // font-size: 24px;
     font-size: 1.5rem;
-
     @media (max-width: $breakpoint-tablet) {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 
@@ -48,28 +54,7 @@
 .navigation-container {
     display: flex;
     gap: 57px;
-}
-
-// text-decoration-line: underline;
-
-@media (max-width: 575.98px) {
-    .header-container {
-        gap: 0px;
-
-        .navigation-container {
-            gap: 26px;
-            .nav-link {
-                font-size: 0.75rem;
-            }
-        }
+    @media (max-width: $breakpoint-tablet) {
+        gap: 26px;
     }
 }
-
-// .header-container .svg-container {
-//     height: 68px;
-// }
-
-// ol,
-// ul {
-//     list-style: none;
-// }

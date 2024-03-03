@@ -3,14 +3,19 @@ import "../styles/CSS/components/card.css";
 interface CardProps {
   id: number;
   title: string;
+  image: string;
   onClick: (id: number) => void;
 }
 
-function Card({ id, title, onClick }: CardProps) {
+function Card({ id, title, image, onClick }: CardProps) {
+    const cardStyle = {
+        backgroundImage: `url(${image})`,
+    };
+
   return (
-    <div className="card" onClick={() => onClick(id)}>
-      <h3 className="card-title">{title}</h3>
-    </div>
+      <div className="card" style={cardStyle} onClick={() => onClick(id)}>
+          <h3 className="card-title">{title}</h3>
+      </div>
   );
 }
 

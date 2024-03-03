@@ -1,5 +1,5 @@
 // CardList.tsx
-import Card from "./Card";
+import Card from "./card";
 import "../styles/CSS/components/gallery.css";
 
 interface Logement {
@@ -31,6 +31,7 @@ function CardList({ data, onCardClick }: CardListProps) {
                     key={logement.id}
                     id={logement.id}
                     title={logement.title}
+                    image={logement.cover}
                     onClick={onCardClick}
                 />
             ))}

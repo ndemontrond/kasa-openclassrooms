@@ -1,17 +1,12 @@
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#root.about {
+  gap: 38px;
 }
 
-main {
+#about-container {
   display: flex;
   flex-direction: column;
-  max-width: 1240px;
-  min-height: 100vh;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
+  gap: 30px;
+  margin: 0px 20px;
 }
 
 .background {

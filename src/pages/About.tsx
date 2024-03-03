@@ -4,43 +4,49 @@ import BackgroundBanner from "../components/backgroundbanner";
 import "../styles/CSS/pages/about.css";
 
 const About = () => {
+    const rootElement = document.getElementById("root");
+    rootElement.classList.add("about");
     return (
         <main>
-            <BackgroundBanner />
-            <DropDownAnimation title="Fiabilité">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quod placeat iure praesentium ab, ipsum necessitatibus! Est,
-                    molestias eveniet, sunt ducimus velit reiciendis similique
-                    mollitia totam quae nostrum veniam cupiditate fugiat?
-                </p>
-            </DropDownAnimation>
-            <DropDownAnimation title="Respect">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quod placeat iure praesentium ab, ipsum necessitatibus! Est,
-                    molestias eveniet, sunt ducimus velit reiciendis similique
-                    mollitia totam quae nostrum veniam cupiditate fugiat?
-                </p>
-            </DropDownAnimation>
-            <DropDownAnimation title="Service">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quod placeat iure praesentium ab, ipsum necessitatibus! Est,
-                    molestias eveniet, sunt ducimus velit reiciendis similique
-                    mollitia totam quae nostrum veniam cupiditate fugiat?
-                </p>
-            </DropDownAnimation>
-            <DropDownAnimation title="Securité">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Quod placeat iure praesentium ab, ipsum necessitatibus! Est,
-                    molestias eveniet, sunt ducimus velit reiciendis similique
-                    mollitia totam quae nostrum veniam cupiditate fugiat?
-                </p>
-            </DropDownAnimation>
+            <div id="about-container">
+                <BackgroundBanner />
+                <DropDownAnimation title="Fiabilité">
+                    <p>
+                        Les annonces postées sur Kasa garantissent une fiabilité
+                        totale. Les photos sont conformes aux logements, et
+                        toutes les informations sont régulièrement vérifiées par
+                        nos équipes.
+                    </p>
+                </DropDownAnimation>
+                <DropDownAnimation title="Respect">
+                    <p>
+                        La bienveillance fait partie des valeurs fondatrices de
+                        Kasa. Tout comportement discriminatoire ou de
+                        perturbation du voisinage entraînera une exclusion de
+                        notre plateforme.
+                    </p>
+                </DropDownAnimation>
+                <DropDownAnimation title="Service">
+                    <p>
+                        La bienveillance fait partie des valeurs fondatrices de
+                        Kasa. Tout comportement discriminatoire ou de
+                        perturbation du voisinage entraînera une exclusion de
+                        notre plateforme.
+                    </p>
+                </DropDownAnimation>
+                <DropDownAnimation title="Securité">
+                    <p>
+                        La sécurité est la priorité de Kasa. Aussi bien pour nos
+                        hôtes que pour les voyageurs, chaque logement correspond
+                        aux critères de sécurité établis par nos services. En
+                        laissant une note aussi bien à l'hôte qu'au locataire,
+                        cela permet à nos équipes de vérifier que les standards
+                        sont bien respectés. Nous organisons également des
+                        ateliers sur la sécurité domestique pour nos hôtes.
+                    </p>
+                </DropDownAnimation>
+            </div>
         </main>
     );
 };
-
 export default About;

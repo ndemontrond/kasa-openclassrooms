@@ -1,5 +1,6 @@
 // Card.tsx
 import "../styles/CSS/components/logo.css";
+
 const Logo = () => {
     return (
         <div className="svg-container">
@@ -26,7 +27,7 @@ const Logo = () => {
                             height="633.642"
                             rx="4.5"
                             stroke="#9747FF"
-                            stroke-dasharray="10 5"
+                            strokeDasharray="10 5"
                         />
                         <g id="Screen=Desktop, Active=Accueil">
                             <g id=".LOGO">

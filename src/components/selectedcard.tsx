@@ -1,19 +1,22 @@
 // SelectedCard.tsx
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import DropDownAnimation from "../components/dropdownanimation2";
 import { useParams } from "react-router-dom";
 import logementsData from "../data/logements.json";
 import "../styles/CSS/components/selectedcard.css";
 import Carrousel from "./carousel";
 import StarRating from "./starRating";
+import NoMatch from "../pages/NoMatch";
 
 const SelectedCard = () => {
     const { cardId } = useParams<{ cardId: string }>();
     const data = logementsData;
     const selectedCard = data.find((logement) => logement.id === cardId);
 
+    // If selectedCard is undefined, it means the cardId is invalid
     if (!selectedCard) {
-        console.log("Received cardId:", cardId);
-        return <div>Card not found</div>;
+        return <NoMatch />; // Render the NoMatch component
     }
 
     return (
@@ -47,11 +50,11 @@ const SelectedCard = () => {
                         <p>{selectedCard.description}</p>
                     </DropDownAnimation>
                     <DropDownAnimation title="Équipements">
-                        <ul>
+                        <p>
                             {selectedCard.equipments.map((equipment, index) => (
                                 <li key={index}>{equipment}</li>
                             ))}
-                        </ul>
+                        </p>
                     </DropDownAnimation>
                 </div>
             </div>

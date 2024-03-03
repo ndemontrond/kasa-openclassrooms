@@ -10,7 +10,7 @@
   color: #ff6060;
   font-family: Montserrat;
   font-size: 288px;
-  font-weight: 700;
+  font-weight: 700px;
   line-height: 8rem;
 }
 @media (max-width: 768px) {
@@ -23,7 +23,7 @@
   color: #ff6060;
   font-family: Montserrat;
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 500px;
 }
 @media (max-width: 768px) {
   .error-message {
@@ -35,7 +35,7 @@
 .return-home {
   font-family: Montserrat;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 500px;
   text-decoration-line: underline;
   color: black;
 }

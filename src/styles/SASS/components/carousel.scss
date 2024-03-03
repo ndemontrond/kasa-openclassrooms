@@ -2,10 +2,7 @@
 
 #carousel {
     position: relative;
-    // height: 415px;
-    //min-width: 100%;
     min-width: 100%;
-    // display: flex;
 }
 
 .carousel-image {
@@ -13,7 +10,6 @@
     width: 100%;
     object-fit: cover;
     object-position: center;
-    // position: absolute;
     border-radius: 25px;
     @media (max-width: $breakpoint-tablet) {
         height: 255px;

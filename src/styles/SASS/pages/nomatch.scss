@@ -12,7 +12,7 @@
     color: #ff6060;
     font-family: Montserrat;
     font-size: 288px;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     line-height: 8rem;
     @media (max-width: $breakpoint-tablet) {
         font-size: 96px;
@@ -23,7 +23,7 @@
     color: #ff6060;
     font-family: Montserrat;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: $font-weight-medium;
     @media (max-width: $breakpoint-tablet) {
         font-size: 18px;
         margin: 0px 30px;
@@ -33,7 +33,7 @@
 .return-home {
     font-family: Montserrat;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: $font-weight-medium;
     text-decoration-line: underline;
     color: black;
     @media (max-width: $breakpoint-tablet) {

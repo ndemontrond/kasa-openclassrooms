@@ -32,7 +32,7 @@
 .footer-container span {
   font-size: 24px;
   font-family: Montserrat;
-  font-weight: 500;
+  font-weight: 500px;
 }
 @media (max-width: 768px) {
   .footer-container span {

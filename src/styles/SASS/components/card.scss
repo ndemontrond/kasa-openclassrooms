@@ -1,10 +1,12 @@
+@import "./../variables";
+
 .card-title {
     color: white;
     margin: 20px;
 
     font-family: Montserrat;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
 }
 
 // Define a mixin to generate flex item styles

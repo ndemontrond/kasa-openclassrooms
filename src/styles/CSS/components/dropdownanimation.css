@@ -27,7 +27,6 @@
 
 .dropdown-content.open p {
   display: block;
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 400px;
 }
@@ -48,7 +47,6 @@
 
 .dropdown-title {
   color: #fff;
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 700px;
 }

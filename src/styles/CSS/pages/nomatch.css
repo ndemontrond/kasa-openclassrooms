@@ -8,7 +8,6 @@
 
 .error {
   color: #ff6060;
-  font-family: Montserrat;
   font-size: 288px;
   font-weight: 700px;
   line-height: 8rem;
@@ -21,7 +20,6 @@
 
 .error-message {
   color: #ff6060;
-  font-family: Montserrat;
   font-size: 36px;
   font-weight: 500px;
 }
@@ -33,7 +31,6 @@
 }
 
 .return-home {
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 500px;
   text-decoration-line: underline;

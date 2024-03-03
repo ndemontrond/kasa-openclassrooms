@@ -25,7 +25,6 @@
 
 #starsContainer svg {
   align-items: center;
-  /* Firefox support for max-width */
 }
 
 .starsStyling {

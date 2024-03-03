@@ -15,7 +15,6 @@
 
 #cardTitle {
   color: #ff6060;
-  font-family: Montserrat;
   font-size: 36px;
   font-weight: 500px;
 }
@@ -27,7 +26,6 @@
 
 #cardLocation {
   color: #000;
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 500px;
 }
@@ -55,7 +53,6 @@
   flex-shrink: 0;
   color: #fff;
   text-align: center;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 700px;
   display: flex;
@@ -130,7 +127,6 @@
 #hostName {
   color: #ff6060;
   text-align: right;
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 500px;
   word-spacing: 500px;

@@ -32,7 +32,6 @@
 .dropdown-content.open p {
     display: block;
     // color: #000;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: $font-weight-light;
     @media (max-width: $breakpoint-tablet) {
@@ -51,7 +50,6 @@
 
 .dropdown-title {
     color: #fff;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: $font-weight-bold;
     @media (max-width: $breakpoint-tablet) {

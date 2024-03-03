@@ -27,11 +27,9 @@ const DropDownAnimation: React.FC<DropDownAnimationProps> = ({
                     className={`arrow-icon ${isOpen ? "open" : ""}`}
                 />
             </dt>
-            {/* {isOpen && ( */}
             <dd className={`dropdown-content ${isOpen ? "open" : ""}`}>
                 {children}
             </dd>
-            {/* )} */}
         </li>
     );
 };

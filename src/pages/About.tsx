@@ -7,8 +7,6 @@ const About = () => {
     const rootElement = document.getElementById("root");
     if (rootElement) {
         rootElement.classList.add("about");
-    } else {
-        console.error("Root element not found in the DOM");
     }
     return (
         <main>

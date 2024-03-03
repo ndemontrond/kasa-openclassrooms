@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 
 function BackgroundBanner() {
     const location = useLocation();
-
     const backgroundBanner =
         location.pathname === "/about"
             ? "background-banner about"

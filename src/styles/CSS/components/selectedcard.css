@@ -16,7 +16,7 @@
 #cardTitle {
   color: #ff6060;
   font-size: 36px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   #cardTitle {
@@ -27,7 +27,7 @@
 #cardLocation {
   color: #000;
   font-size: 18px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 
 #cardTagsContainer {
@@ -54,7 +54,7 @@
   color: #fff;
   text-align: center;
   font-size: 14px;
-  font-weight: 700px;
+  font-weight: 700;
   display: flex;
   align-items: center; /* Vertically center */
   justify-content: center;
@@ -128,7 +128,7 @@
   color: #ff6060;
   text-align: right;
   font-size: 18px;
-  font-weight: 500px;
+  font-weight: 500;
   word-spacing: 500px;
 }
 @media (max-width: 768px) {

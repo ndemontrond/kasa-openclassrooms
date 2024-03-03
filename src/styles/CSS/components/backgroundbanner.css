@@ -41,7 +41,7 @@
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #000;
   font-size: 48px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 @media (max-width: 768px) {
   .page-title {

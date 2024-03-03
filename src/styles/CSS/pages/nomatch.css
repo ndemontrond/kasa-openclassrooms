@@ -9,7 +9,7 @@
 .error {
   color: #ff6060;
   font-size: 288px;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 8rem;
 }
 @media (max-width: 768px) {
@@ -21,7 +21,7 @@
 .error-message {
   color: #ff6060;
   font-size: 36px;
-  font-weight: 500px;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   .error-message {
@@ -32,7 +32,7 @@
 
 .return-home {
   font-size: 18px;
-  font-weight: 500px;
+  font-weight: 500;
   text-decoration-line: underline;
   color: black;
 }

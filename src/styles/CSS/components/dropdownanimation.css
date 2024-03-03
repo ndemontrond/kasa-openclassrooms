@@ -28,7 +28,7 @@
 .dropdown-content.open p {
   display: block;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
 }
 @media (max-width: 768px) {
   .dropdown-content.open p {
@@ -48,7 +48,7 @@
 .dropdown-title {
   color: #fff;
   font-size: 18px;
-  font-weight: 700px;
+  font-weight: 700;
 }
 @media (max-width: 768px) {
   .dropdown-title {
